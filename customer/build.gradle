@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    defaultConfig {
+        applicationId "com.example.rest"
+        minSdkVersion 24
+        compileSdk 34
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':mylibrary')
+    implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.codemybrainsout.rating:ratingdialog:2.0.0'
+    implementation 'com.iarcuschin:simpleratingbar:0.1.5'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'org.jetbrains.kotlin.android'

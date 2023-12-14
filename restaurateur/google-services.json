@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1059136714904",
+    "firebase_url": "https://food-365b5-default-rtdb.firebaseio.com",
+    "project_id": "food-365b5",
+    "storage_bucket": "food-365b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059136714904:android:d4356ef971a684e44ef8ed",
+        "android_client_info": {
+          "package_name": "com.example.rest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARRn3OhKy4bbKo1eijWK0HQ8GGB0Xl9mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
